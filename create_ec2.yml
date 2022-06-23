@@ -2,7 +2,7 @@
 - name: Create ec2 Instance
   hosts: localhost
   tasks:
-  # Create a new ec2 instance
+  # Create a new ec2 instance 
   - name: Create ec2 Instance Play
     amazon.aws.ec2_instance:
       region: us-east-2 # US East, Ohio
