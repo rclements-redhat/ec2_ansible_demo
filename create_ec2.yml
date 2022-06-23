@@ -1,8 +1,9 @@
 ---
-- name: Create EC2 Instance
+- name: Create ec2 Instance
   hosts: localhost
   tasks:
-  - name: Create EC2 Instance Play
+  # Create a new ec2 instance
+  - name: Create ec2 Instance Play
     amazon.aws.ec2_instance:
       region: us-east-2 # US East, Ohio
       key_name: ec2_keypair # Key used to log in
@@ -16,6 +17,7 @@
     register: ec2_result
     delegate_to: localhost
     
+  # Play to display new instance_id of ec2 to screen
   - name: Display results
     debug:
       var: ec2_result.instance_ids
