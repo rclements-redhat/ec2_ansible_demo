@@ -9,7 +9,7 @@
       instance_type: t2.micro
       image_id: ami-092b43193629811af # RHEL8 AMI
       wait: yes
-      count: 2 # Create 1 EC2 Instance
+      count: 1 # Create 1 EC2 Instance
       vpc_subnet_id: subnet-00c58b63ae2bb7796
       tags:
         Environment: test
