@@ -18,4 +18,4 @@
     
   - name: Display results
     debug:
-      var: ec2_result
+      var: ec2_result.instance_ids
