@@ -16,6 +16,6 @@
     register: ec2_result
     delegate_to: localhost
     
-- name: Display results
-  debug:
-    var: ec2_result.stdout_lines
+  - name: Display results
+    debug:
+      var: ec2_result.stdout_lines
