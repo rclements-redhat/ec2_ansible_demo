@@ -13,4 +13,9 @@
       vpc_subnet_id: subnet-00c58b63ae2bb7796
       tags:
         Environment: test
+    register: ec2_result
     delegate_to: localhost
+    
+- name: Display results
+  debug:
+    var: ec2_result.stdout_lines
