@@ -1,5 +1,5 @@
 ---
-- name: Create ec2 Instance
+- name: Create AWS EC2 Instance and Assign an EIP
   hosts: localhost
   tasks:
   - name: Create ec2 Instance Play
