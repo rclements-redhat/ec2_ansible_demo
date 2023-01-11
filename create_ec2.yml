@@ -9,6 +9,7 @@
       instance_type: t2.micro
       image_id: ami-08e637cea2f053dfa # RHEL9 AMI
       wait: yes
+      state: started
       count: 1 # Create 1 EC2 Instance
       vpc_subnet_id: subnet-09d6f99a7a4fd5b9e
       tags:
