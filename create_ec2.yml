@@ -29,7 +29,7 @@
       ip: 35.170.124.149
 
   - name: Install webserver
-    yum:
+    dnf:
        name: httpd
        state: present
        
