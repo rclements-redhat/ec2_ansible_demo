@@ -7,10 +7,10 @@
       region: us-east-2 # US East, Ohio
       key_name: ec2_keypair # Key used to log in
       instance_type: t2.micro
-      image_id: ami-092b43193629811af # RHEL8 AMI
+      image_id: ami-08e637cea2f053dfa # RHEL9 AMI
       wait: yes
       count: 1 # Create 1 EC2 Instance
-      vpc_subnet_id: subnet-00c58b63ae2bb7796
+      vpc_subnet_id: subnet-09d6f99a7a4fd5b9e
       tags:
         Environment: test
     register: ec2_result
