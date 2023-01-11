@@ -1,8 +1,0 @@
----
-- name: Install webserver
-  hosts: all
-  tasks:
-  - name: Install webserver
-    dnf:
-       name: httpd
-       state: present
