@@ -22,6 +22,6 @@
       var: ec2_result.instance_ids
 
   - name: Add Elastic IP to instance
-    amazon.aws.ec2_instance:
+    amazon.aws.ec2_eip:
       device_id: "{{ ec2_result.instance_ids[0] }}"
       ip: 35.170.124.149
