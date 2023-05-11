@@ -4,11 +4,14 @@
   tasks:
   - name: Create ec2 Instance Play
     amazon.aws.ec2_instance:
+      name: new-demo-ec2
       region: us-east-1 # US East, Ohio
       key_name: aws-east-1-keypair_MAR162023 # Key used to log in
       instance_type: t2.micro
       image_id: ami-08e637cea2f053dfa # RHEL9 AMI
       wait: yes
+      network:
+        assign_public_ip: true
       count: 1 # Create 1 EC2 Instance
       vpc_subnet_id: subnet-00f022f9a743d60ef
       tags:
